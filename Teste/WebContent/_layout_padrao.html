@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="utf-8">
+<title>Cadastro Produto</title>
+<link rel="stylesheet" type="text/css"
+	href="styles/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css"
+	href="styles/bootstrap-responsive.min.css">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/goldenaxe.css">
+<script src="scripts/jquery-3.1.1.min.js"></script>
+<script src="scripts/angular.min.js"></script>
+<script src="scripts/produtosAngular.js"></script>
+<script src="scripts/jquery.maskedinput.min.js"></script>
+<script src="scripts/goldenaxe.js"></script>
+<script src="scripts/bootbox.min.js"></script>
+<script src="scripts/bootstrap.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/affix.js"></script>
+<script src="scripts/alert.js"></script>
+<script src="scripts/button.js"></script>
+<script src="scripts/carousel.js"></script>
+<script src="scripts/collapse.js"></script>
+<script src="scripts/dropdown.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="scripts/popover.js"></script>
+<script src="scripts/scrollspy.js"></script>
+<script src="scripts/tab.js"></script>
+<script src="scripts/tooltip.js"></script>
+<script src="scripts/transition.js"></script>
+</head>
+<body ng-controller="appCtrl">
+	<form name="cadastro">
+		<label>Código</label> <input type="text" ng-model="produto.Codigo">
+		<label>Nome</label> <input type="text" ng-model="produto.Nome">
+		<label>Quantidade</label> <input type="text"
+			ng-model="produto.Quantidade"> <label>Preço</label> <input
+			type="text" ng-model="produto.Preco"> <label>Tipo de
+			Mercadoria</label> <select ng-model="produto.TipoMercadoria"
+			ng-options="item.Id as item.Nome for item in tiposMercadoria">
+			<option value="">Selecione uma opção...</option>
+		</select> <label>Tipo de Negócio</label> <select ng-model="produto.TipoNegocio"
+			ng-options="item.Id as item.Nome for item in tiposNegocio">
+			<option value="">Selecione uma opção...</option>
+		</select> <br>
+		<button type="button" class="btn" ng-click="cadastrarProduto(produto)">Cadastrar</button>
+	</form>
+	{{tiposNegocio}}
+	{{tiposMercadoria}}
+
+</body>
+</html>

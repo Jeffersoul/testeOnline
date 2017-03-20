@@ -1,0 +1,131 @@
+#usuarioLogado{
+	left: 402%;
+}
+
+#cadastroCliente{
+	margin-left: 40px;
+}
+
+#alterarCliente{
+	margin-left: 40px;
+}
+
+#alterarFuncionario{
+	margin-left: 40px;
+}
+
+#cadastroFuncionario{
+	margin-left: 40px;
+}
+
+#inserirEstoque{
+	margin-left: 40px;
+}
+
+#alterarEstoque{
+	margin-left: 40px;
+}
+
+#inputIcon{
+	width:180px;
+}
+
+#sideBarMesas{
+/* 	background-color: #E6E6FA; */
+}
+
+#fornecedorCadastro{
+	margin-left: 40px;
+}
+
+#fornecedorAlterar, #alterarFornecedor{
+	margin-left: 40px;
+}
+
+#excluirFornecedor, #cadastroFornecedor{
+	margin-left: 40px;
+}
+
+#comandaAdmin{
+	margin-left: 40px;
+}
+
+.botoesComanda{
+	margin-left: 40px;
+}
+
+
+#cadastrarProduto{
+	margin-left: 40px;
+}
+
+#tableControleProdutos {
+    width: 70%;
+    margin-top: 60px;
+    float: right;
+    margin-right: 30px;
+}
+
+table .quantidade{
+	width: 25px;
+}
+
+table th {
+	width: 1px;
+}
+
+table .preco {
+	width: 140px;
+
+}
+
+table .total {
+	width: 140px;
+}
+
+th, td, tr {
+	text-align: center!important;
+}
+
+
+#overviewMesas{
+	margin-top:25px;
+	text-align:center;
+	position: relative;
+    border-radius: 40px;
+}
+
+#overviewMesas img{
+	cursor:pointer;
+	margin: 0px 10px 10px 10px;
+}
+
+.tableNumber {
+	
+	position: absolute;
+    margin-left: -83px;
+    margin-top: 35px;
+    font-size: -webkit-xxx-large;
+    opacity: 0.35;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.tableTimeCounter {
+	
+	position: absolute;
+    margin-left: -83px;
+    margin-top: 35px;
+    font-size: medium;
+    cursor: pointer;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+input[type=checkbox]{
+	margin: 0 0 1px 0;
+}
+
+label[for=novoProduto]{
+	display:inline;
+}
